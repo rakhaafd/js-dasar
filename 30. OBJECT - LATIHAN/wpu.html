@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Angkot (sopir, trayek, penumpang, kas){
+    this.sopir = sopir
+    this.trayek = trayek
+    this.penumpang = penumpang
+    this.kas = kas
+    this.penumpangNaik = function(...namaPenumpang){
+        this.penumpang.push(...namaPenumpang)
+        return this.penumpang
+    }
+
+        this.penumpangTurun = function(namaPenumpang, bayar){
+            if (this.penumpang.length === 0){
+                console.log('angkot masi kosong')
+                return this.penumpang
+            }
+        
+
+        for(let i = 0; i < this.penumpang.length; i++){
+            if(this.penumpang[i] == namaPenumpang){
+                this.penumpang[i] = console.log('kosong')
+                this.kas += bayar
+                return this.penumpang
+            }
+        }
+    }
+
+}
+
+let angkot1 = new Angkot('rakha', ['johar', 'penggaron',], [], [])
+
+    </script>
+</body>
+</html>

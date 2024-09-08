@@ -1,0 +1,11 @@
+daripada menambahkan parameter seiring dengan banyaknya argumen, maka lebih baik menggunakan 'return arguments' supaya argument yang di tambahkan, tidak terbatas oleh parameter (dan artinya kita tidak perlu repot2 untuk menambah ulang parameter fungsi tersebut.)
+
+baris ini:
+hasil += arguments[i];
+
+sama saja dengan:
+let hasil = 0; // Inisialisasi variabel hasil
+hasil += arguments[0]; // Menambahkan nilai dari argumen ke-0
+hasil += 6; // Menambahkan nilai 6
+hasil += 7; // Menambahkan nilai 7
+hasil += 8; // Menambahkan nilai 8

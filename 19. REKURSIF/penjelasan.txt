@@ -1,0 +1,1 @@
+apakah argument yang ditambahkan itu sama dengan 0? jika tidak, maka kurangkan dengan 0.5

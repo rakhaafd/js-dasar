@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let penumpang = []
+let tambahPenumpang = function(namaPenumpang, penumpang){
+
+    //angkot kosong
+    if (penumpang.length == 0){
+        penumpang.push(namaPenumpang) 
+        return penumpang
+    }
+
+    else {
+        //telusuri kursi
+        for (let i = 0; i < penumpang.length; i ++){
+            //jika ada kursi yang kosong
+            if(penumpang[i] == undefined){
+                //penumpang yang naik duduk di kursi kosong
+                penumpang[i] = namaPenumpang
+                return penumpang
+            }
+
+else if (penumpang[i] == namaPenumpang){
+    console.log(`nama ${namaPenumpang} sudah ada dalam angkot`)
+    return penumpang
+}
+
+            else if (i == penumpang.length - 1) {
+                penumpang.push(namaPenumpang)
+                return penumpang 
+            }
+        }
+    }
+}
+
+
+
+let hapusPenumpang = function(namaPenumpang, penumpang){
+    if (penumpang.length == 0){
+        console.log('angkot masih kosong')
+        return penumpang
+    }
+
+    else {
+        for (let i = 0; i < penumpang.length; i ++)
+        if (penumpang[i] == namaPenumpang){
+            penumpang[i] = undefined
+            console.log(`${namaPenumpang} berhasil diturunkan`)
+            return penumpang
+        }
+
+        else if ( i == penumpang.length - 1){
+            console.log(`nama ${namaPenumpang} tidak ada dalam angkot`)
+            return penumpang
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

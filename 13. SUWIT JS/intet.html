@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>suwit simple</title>
+  </head>
+  <body>
+    <script>
+
+      // play again
+      let play = true;
+      while (play) {
+        let p = prompt("choose ant/human/elephant  ..");
+
+        //comp
+        let comp = Math.random();
+
+        if (comp < 0.47) {
+          comp = "elephant";
+        } else if (comp <= 0.62 || comp < 0.81) {
+          comp = "ant";
+        } else {
+          comp = "human";
+        }
+
+        //   rules logic
+        let result = "";
+        if (p == comp) {
+          result = "draw";
+        } else if (p == "elephant") {
+          result = comp == "human" ? "U WIN" : "U LOSE";
+        } else if (p == "human") {
+          result = comp == "ant" ? "U WIN" : "U LOSE";
+        } else if (p == "ant") {
+          result = comp == "elephant" ? "U WIN" : "U LOSE";
+        } else {
+          result = null;
+        }
+
+        alert(
+          `u choose ${p} \nand comp choose ${comp} \nthe result is ${result} `
+        );
+        play = confirm("want to play again?");
+      }
+      alert("thanks for playing");
+    </script>
+  </body>
+</html>

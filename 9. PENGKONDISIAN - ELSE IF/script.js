@@ -1,0 +1,1 @@
+let userInput = prompt('masukkan kalimat atau kata') % 2 == 0 ? alert(`${userInput} is even`) : alert(`${userInput} is odd`)

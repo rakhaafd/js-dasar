@@ -1,0 +1,4 @@
+jadi function scope analogi nya seperti ini:
+bayangkan kita naik sebuah mobil yang memiliki kaca film yang warnanya sangat gelap. kita akan bisa melihat keluar, sedangkan orang luar tidak akan bisa melihat ke dalam..
+
+yang ada di dalam function namanya lingkup lokal, dan jika diluar function namanya lingkup global

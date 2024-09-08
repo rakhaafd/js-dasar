@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=z, initial-scale=1.0" />
+    <title>IDK</title>
+  </head>
+  <body>
+    <div class="imej" style="display: none">
+      <img src="Wiener king.jpeg" alt="" class="imej"/>
+    </div>
+    <script>
+      const image = document.querySelector('.imej')
+      let userInput = prompt('masukkan angka yang anda inginkan')
+      function hitungMundur (n){
+        if (n >= 0){
+          alert(n)
+          hitungMundur(n - 1)
+        }
+
+        else {
+          image.style.display = 'block'
+        }
+      }
+
+      hitungMundur(userInput)
+// function hitungMundur(n){
+//   if (n > 0){
+//     alert(n)
+//     hitungMundur(n - 1)
+//   }
+//   else {
+//     alert('meledakk')
+//   }
+// }
+// window.addEventListener('load', hitungMundur(userInput))
+      
+
+
+      //     else if (input > 0){
+      //         for (let i = input; i >= 0; i--){
+      //             alert(`hitung mundur -${i} detik`)
+      //         }
+      //         alert('BOOOOOMMM!')
+      //         img.style.display = 'block'
+      //     }
+      //     else {
+      //         alert('IS NOT A NUMBER')
+      //     }
+      // hitungMundur()
+    </script>
+  </body>
+</html>

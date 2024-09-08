@@ -1,0 +1,5 @@
+perbedaan dari forEach dengan map, adalah forEach hanya bersifat callback. sedangkan map bersifat dapat mengembalikan nilai array
+
+hal ini berlaku ketika kita membuat variable yang didalamnya menggunakan forEach dengan mengambil nilai dari array yang ada pada variable diatasnya. maka itu akan menghasilkan error
+
+solusi nya adalah menggunakan map, kemudian return

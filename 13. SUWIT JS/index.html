@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suwit simple</title>
+</head>
+<body>
+    <script>
+       let tanya = true
+while(tanya){
+
+
+let p = prompt('pilihan anda ..')
+
+// otak komputer
+let comp = Math.random()
+
+if (comp <= 0.34){
+    comp = 'gajah'
+
+} else if (comp <= 0.54 || comp < 0.70){
+    comp = 'orang'
+}
+else {
+    comp = 'semut'
+}
+
+let hasil = ''
+//rules
+if (p === comp){
+    hasil = 'seri'
+}
+else if (p == 'gajah') {
+    hasil = (comp == 'orang') ? 'MENANG' : 'KALAH'
+}
+
+else if (p == 'orang'){
+    hasil = (comp == 'semut' ) ? 'MENANG' : 'KALAH'
+}
+
+else if (p == 'semut'){
+    hasil = (comp == 'gajah') ? 'MENANG' : 'KALAH'
+}
+
+else {
+    hasil = 'NGAWUR!!!'
+}
+
+alert (`kamu memilih ${p} \nkomputer memilih ${comp} \nhasilnya adalah kamu ${hasil}`)
+
+tanya = confirm('lagi?')
+}
+
+alert('terimakasih telah bermain!')
+    </script>
+</body>
+</html>

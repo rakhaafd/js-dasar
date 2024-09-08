@@ -1,0 +1,3 @@
+jika slice, maka pertama tama buatlah variable terlebih dahulu. yang akan mengambil dari variable awal,
+
+penggunaanya indexAwal masuk, indexAkhir + 1 

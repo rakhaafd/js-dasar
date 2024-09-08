@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tambah array</title>
+  </head>
+  <body>
+    <script>
+      let repeat = true;
+      while (repeat) {
+        const userI = prompt("masukkan array yang ingin di push");
+        let arr = new Array();
+        function join(n) {
+          arr.push(userI);
+          alert(arr);
+          return;
+        }
+      }
+      join(userI);
+      repeat = confirm("apakah anda ingin mengulanginya?");
+    </script>
+  </body>
+</html>
